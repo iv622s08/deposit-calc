@@ -1,10 +1,12 @@
 #include <stdio.h>
-void check(int p, int s){
-	if p < 365
-}
-void main(){
-	int p, s;
+void input(int *p, int *s){
 	printf("Input period and sum deposit: ");
-	scanf(&p, &s);
-	check(p, s)
+	scanf("%d%d", &(*p), &(*s));
+	}
+
+int main(){
+	int p = 0, s = 0;
+	input(&p, &s);
+	printf("%d %d", p, s);
+	return 0;
 }
